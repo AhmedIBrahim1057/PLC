@@ -67,46 +67,6 @@
         <div class="body">
             <header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}">
 				<div class="header-body border-top-0">
-					<div class="header-top">
-						<div class="container">
-							<div class="header-row py-2">
-								<div class="header-column justify-content-start">
-									<div class="header-row">
-										<nav class="header-nav-top">
-											<ul class="nav nav-pills">
-												<li class="nav-item nav-item-anim-icon d-none d-md-block">
-													<a class="nav-link pl-0" href="#"><i class="fas fa-angle-right"></i> About Us</a>
-												</li>
-												<li class="nav-item nav-item-anim-icon d-none d-md-block">
-													<a class="nav-link" href="#"><i class="fas fa-angle-right"></i> Contact Us</a>
-												</li>
-												<li class="nav-item dropdown nav-item-left-border d-none d-sm-block nav-item-left-border-remove nav-item-left-border-sm-show">
-													<a class="nav-link" href="#" role="button" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-														<img src="{{ asset('FrontendFiles/img/blank.gif') }}" class="flag flag-us" alt="English" /> English
-														<i class="fas fa-angle-down"></i>
-													</a>
-													<div class="dropdown-menu" aria-labelledby="dropdownLanguage">
-														<a class="dropdown-item" href="#"><img src="{{ asset('FrontendFiles/img/blank.gif') }}" class="flag flag-us" alt="English" /> English</a>
-														<a class="dropdown-item" href="#"><img src="{{ asset('FrontendFiles/img/blank.gif') }}" class="flag flag-es" alt="English" /> Español</a>
-														<a class="dropdown-item" href="#"><img src="{{ asset('FrontendFiles/img/blank.gif') }}" class="flag flag-fr" alt="English" /> Française</a>
-													</div>
-												</li>
-											</ul>
-										</nav>
-									</div>
-								</div>
-								<div class="header-column justify-content-end">
-									<div class="header-row">
-										<ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean">
-											<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-											<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-											<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 					<div class="header-container container">
 						<div class="header-row">
 							<div class="header-column">
@@ -114,8 +74,9 @@
 									<div class="header-logo">
 										<a href="/" class="d-flex align-items-center h6" style="text-decoration: none">
 											<img alt="PLC" width="48" height="48" data-sticky-width="40" data-sticky-height="40"  src="{{ asset('FrontendFiles/img/custom/LOGO-TINY-headonly.png') }}">
-											<div style="width: 230px;">
-												<span class="ml-3">Personal Learning Coach</span>
+											<div style="width: 230px;" class="ml-2 mt-4 text-center">
+												<span>Personal Learning Coach</span>
+                                                <p class="small">Powered by The Let Me Learn Process®</p>
 											</div>
 										</a>
 									</div>
@@ -128,42 +89,44 @@
 											<nav class="collapse">
 												<ul class="nav nav-pills" id="mainNav">
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle active" href="index.html">
+														<a class="dropdown-item " href="#slider-section">
 															Home
 														</a>
 													</li>
-													<li class="dropdown dropdown-mega">
-														<a class="dropdown-item dropdown-toggle" href="#">
-															LCI
+													<li class="nav-item nav-item-anim-icon d-md-block">
+                                                        <a class="dropdown-item" href="#about">
+                                                             About Us
+                                                        </a>
+                                                    </li>
+                                                    <li class="dropdown">
+														<a class="dropdown-item " href="#pricing">
+															Pricing
 														</a>
 													</li>
-													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#">
-															Tasks
-														</a>
-													</li>
-													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#">
-															Groups
-														</a>
-													</li>
-													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#">
-															Feedback
-														</a>
-													</li>
-													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#">
-															Invite
-														</a>
-													</li>
-													
+                                                    <li class="nav-item nav-item-anim-icon d-md-block">
+                                                        <a class="dropdown-item" href="#contact">
+                                                            Contact Us
+                                                        </a>
+                                                    </li>
 
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#">
-																sign out
+														<a class="dropdown-item " href="/">
+																sign in
 														</a>
 													</li>
+                                                    
+                                                    <li class="nav-item dropdown nav-item-left-border d-sm-block  ">
+                                                        <a class="nav-link" href="#" role="button" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <img src="{{asset('FrontendFiles/img/blank.gif')}}" class="flag flag-us mr-1" alt="English"> English
+                                                            <i class="fas fa-angle-down"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownLanguage" style="">
+                                                            <a class="dropdown-item" href="#"><img src="{{asset('FrontendFiles/img/blank.gif')}}" class="flag flag-us" alt="English"> English</a>
+                                                            <a class="dropdown-item" href="#"><img src="{{asset('FrontendFiles/img/blank.gif')}}" class="flag flag-es" alt="English"> Español</a>
+                                                            <a class="dropdown-item" href="#"><img src="{{asset('FrontendFiles/img/blank.gif')}}" class="flag flag-fr" alt="English"> Française</a>
+                                                        </div>
+                                                    </li>
+                                                        
 												</ul>
 											</nav>
 										</div>
@@ -197,7 +160,10 @@
                     </ul>
                 </div> --}}
                 <div class="copyright bg-dark py-4">
-                    <div class="container text-center py-2">
+                    <div class="container text-center py-2 d-flex justify-content-center ">
+                        <a href="https://www.letmelearn.org/" target="_blank">
+                            <img src="{{ asset('FrontendFiles/img/custom/footer.png')}}" alt="" style="width: auto" class="mx-5">
+                        </a>
                         <p class="mb-0 text-2">Copyright &copy; 2021 - PLC - All Rights Reserved</p>
                     </div>
                 </div>
@@ -237,8 +203,11 @@
         <!-- Theme Initialization Files -->
         <script src="{{ asset('FrontendFiles/js/theme.init.js') }}"></script>
 
+        {{-- recaptcha --}}
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
         <!-- Examples -->
-        
+        @yield('js')
 
         <!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
         <script>

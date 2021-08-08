@@ -1,11 +1,12 @@
 @extends('../app')
 
 @section('content')
-<div class="slider-container rev_slider_wrapper" style="height: 800px;">
+{{-- Slider  --}}
+<div id="slider-section" class="slider-container rev_slider_wrapper" style="height: 800px;">
     <div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': 1170, 'gridheight': 800, 'responsiveLevels': [4096,1200,992,500], 'navigation' : {'arrows': { 'enable': false }, 'bullets': {'enable': true, 'style': 'bullets-style-1', 'h_align': 'center', 'v_align': 'bottom', 'space': 7, 'v_offset': 70, 'h_offset': 0}}}">
         <ul>
             <li data-transition="fade" class="slide-overlay slide-overlay-level-7">
-                <img src="{{ asset('FrontendFiles/img/slides/slide-corporate-4-1.jpg') }}"  
+                <img src="{{ asset('FrontendFiles/img/custom/banner.jpg') }}"  
                     alt=""
                     data-bgposition="center center" 
                     data-bgfit="cover" 
@@ -13,101 +14,42 @@
                     class="rev-slidebg">
 
                 <div class="tp-caption"
-                    data-x="center" data-hoffset="['-150','-150','-150','-240']"
-                    data-y="center" data-voffset="['-110','-110','-110','-135']"
+                    data-x="center" data-hoffset="['-120','-150','-150','-220']"
+                    data-y="center" data-voffset="['-110','-110','-110','-155']"
                     data-start="1000"
-                    data-transform_in="x:[-300%];opacity:0;s:500;"
+                    data-transform_in="x:[-500%];opacity:0;s:500;"
                     data-transform_idle="opacity:0.2;s:500;"><img src="{{ asset('FrontendFiles/img/slides/slide-title-border.png') }}" alt=""></div>
 
                 <div class="tp-caption text-color-light font-weight-normal"
                     data-x="center"
-                    data-y="center" data-voffset="['-110','-110','-110','-135']"
+                    data-y="center" data-voffset="['-110','-110','-110','-155']"
                     data-start="700"
-                    data-fontsize="['22','22','22','40']"
+                    data-fontsize="['22','22','22','50']"
                     data-lineheight="['25','25','25','45']"
                     data-transform_in="y:[-50%];opacity:0;s:500;">Let Me Learn</div>
 
                 <div class="tp-caption"
-                    data-x="center" data-hoffset="['150','150','150','240']"
-                    data-y="center" data-voffset="['-110','-110','-110','-135']"
+                    data-x="center" data-hoffset="['120','150','150','220']"
+                    data-y="center" data-voffset="['-110','-110','-110','-155']"
                     data-start="1000"
                     data-transform_in="x:[300%];opacity:0;s:500;"
                     data-transform_idle="opacity:0.2;s:500;"><img src="{{ asset('FrontendFiles/img/slides/slide-title-border.png') }}" alt=""></div>
+                
 
                 <h1 class="tp-caption font-weight-extra-bold text-color-light negative-ls-2"
                     data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                     data-x="center"
                     data-y="center" data-voffset="['-60','-60','-60','-85']"
-                    data-fontsize="['50','50','50','90']"
+                    data-fontsize="['50','50','50','60']"
                     data-lineheight="['55','55','55','95']">Personal Learning Coach</h1>
 
                 <div class="tp-caption font-weight-light text-center"
                     data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2000,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
                     data-x="center"
-                    data-y="center" data-voffset="['0','0','0','-25']"
-                    data-fontsize="['18','18','18','50']"
+                    data-y="center" data-voffset="['0','0','0','-15']"
+                    data-fontsize="['18','18','18','30']"
                     data-lineheight="['29','29','29','40']"
                     style="color: #b5b5b5;">Powered by the Let Me Learn Process®.</div>
-
-                <a class="tp-caption btn btn-light-2 btn-outline btn-rounded font-weight-semibold"
-                    data-frames='[{"delay":4500,"speed":2000,"frame":"0","from":"opacity:0;y:50%;","to":"o:1;y:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                    data-hash
-                    data-hash-offset="85"
-                    href="#main"
-                    data-x="center" data-hoffset="0"
-                    data-y="center" data-voffset="['100','100','100','75']"
-                    data-whitespace="nowrap"	
-                    data-fontsize="['15','15','15','33']"	
-                    data-paddingtop="['15','15','15','40']"
-                    data-paddingright="['45','45','45','110']"
-                    data-paddingbottom="['15','15','15','40']"				 
-                    data-paddingleft="['45','45','45','110']">GET STARTED NOW!</a>
-                
-            </li>
-            {{-- <li data-transition="fade" class="slide-overlay slide-overlay-level-7">
-                <img src="{{ asset('FrontendFiles/img/slides/slide-corporate-4-2.jpg') }}"  
-                    alt=""
-                    data-bgposition="center center" 
-                    data-bgfit="cover" 
-                    data-bgrepeat="no-repeat" 
-                    class="rev-slidebg">
-
-                <div class="tp-caption"
-                    data-x="center" data-hoffset="['-115','-115','-115','-185']"
-                    data-y="center" data-voffset="['-110','-110','-110','-135']"
-                    data-start="1000"
-                    data-transform_in="x:[-300%];opacity:0;s:500;"
-                    data-transform_idle="opacity:0.2;s:500;"><img src="{{ asset('FrontendFiles/img/slides/slide-title-border.png') }}" alt=""></div>
-
-                <div class="tp-caption text-color-light font-weight-normal"
-                    data-x="center"
-                    data-y="center" data-voffset="['-110','-110','-110','-135']"
-                    data-start="700"
-                    data-fontsize="['22','22','22','40']"
-                    data-lineheight="['25','25','25','45']"
-                    data-transform_in="y:[-50%];opacity:0;s:500;">WE ARE DESIGN</div>
-
-                <div class="tp-caption"
-                    data-x="center" data-hoffset="['115','115','115','185']"
-                    data-y="center" data-voffset="['-110','-110','-110','-135']"
-                    data-start="1000"
-                    data-transform_in="x:[300%];opacity:0;s:500;"
-                    data-transform_idle="opacity:0.2;s:500;"><img src="{{ asset('FrontendFiles/img/slides/slide-title-border.png') }}" alt=""></div>
-
-                <div class="tp-caption font-weight-extra-bold text-color-light negative-ls-2"
-                    data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                    data-x="center"
-                    data-y="center" data-voffset="['-60','-60','-60','-85']"
-                    data-fontsize="['50','50','50','90']"
-                    data-lineheight="['55','55','55','95']">SPECIALISTS</div>
-
-                <div class="tp-caption font-weight-light text-center"
-                    data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2000,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
-                    data-x="center"
-                    data-y="center" data-voffset="['-10','-10','-10','-25']"
-                    data-fontsize="['18','18','18','50']"
-                    data-lineheight="['29','29','29','40']"
-                    style="color: #b5b5b5;">Designers thinking outside the box, learn more about us.</div>
 
                 <a class="tp-caption btn btn-light-2 btn-outline btn-rounded font-weight-semibold"
                     data-frames='[{"delay":2500,"speed":2000,"frame":"0","from":"opacity:0;y:50%;","to":"o:1;y:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
@@ -115,63 +57,252 @@
                     data-hash-offset="85"
                     href="#main"
                     data-x="center" data-hoffset="0"
-                    data-y="center" data-voffset="['70','70','70','45']"
+                    data-y="center" data-voffset="['100','100','100','95']"
                     data-whitespace="nowrap"	
-                    data-fontsize="['15','15','15','33']"	
+                    data-fontsize="['15','15','15','25']"	
                     data-paddingtop="['15','15','15','40']"
-                    data-paddingright="['45','45','45','110']"
+                    data-paddingright="['45','45','45','80']"
                     data-paddingbottom="['15','15','15','40']"				 
-                    data-paddingleft="['45','45','45','110']">GET STARTED NOW!</a>
+                    data-paddingleft="['45','45','45','80']">GET STARTED NOW!</a>
                 
-            </li> --}}
+            </li>
+           
         </ul>
     </div>
 </div>
-{{-- <section id="intro" class="section section-no-border section-angled bg-light pt-5 pb-5 m-0">
-    <div class="section-angled-layer-bottom section-angled-layer-increase-angle bg-color-light-scale-1" style="padding: 21rem 0;"></div>
-    <div class="container pb-5" style="min-height: 1000px;">
-        <div class="row mb-5 pb-lg-3 counters">
-            <div class="col-lg-10 text-center offset-lg-1">
-                <h2 class="font-weight-bold text-9 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-duration="750" data-plugin-options="{'accY': -200}">The Perfect Template for<br>Beginners or Professionals</h2>
-                <p class="sub-title text-primary text-4 font-weight-semibold positive-ls-2 mt-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" data-appear-animation-duration="750">YOUR WEBSITE TO <span class="highlighted-word highlighted-word-animation-1 highlighted-word-animation-1-2 highlighted-word-animation-1 highlighted-word-animation-1-no-rotate alternative-font-4 font-weight-semibold line-height-2 pb-2">A NEW LEVEL</span></p>
-                <p class="text-1rem text-color-default negative-ls-05 pt-3 pb-4 mb-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" data-appear-animation-duration="750">PLC is simply a better choice for your new website design. The template is several years among the most popular in the world, being constantly improved and following the trends of design and best practices of code. Your search for the best solution is over, get your own copy and join tens of thousands of happy customers.</p>
-            </div>
-            <div class="col-sm-6 col-lg-4 offset-lg-2 counter mb-5 mb-md-0">
-                <div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="750" data-appear-animation-duration="750">
-                    <h3 class="font-weight-extra-bold text-14 line-height-1 mb-2" data-to="80" data-append="+">0</h3>
-                    <label class="font-weight-semibold negative-ls-1 text-color-dark mb-0">Included Demos</label>
-                    <p class="text-color-grey font-weight-semibold pb-1 mb-2">600+ HTML FILES</p>
-                    <p class="mb-0"><a href="#demos" data-hash data-hash-offset="120" class="text-color-primary d-flex align-items-center justify-content-center text-4 font-weight-semibold text-decoration-none">VIEW DEMOS <i class="fas fa-long-arrow-alt-right ml-2 text-4 mb-0"></i></a></p>
+
+{{-- About Us  --}}
+<div class="container py-5" id="about">
+
+    <div class="row pt-5">
+        <div class="col">
+
+            {{-- <div class="row text-center pb-5">
+                <div class="col-md-9 mx-md-auto">
+                    <div class="overflow-hidden mb-3">
+                        <h1 class="word-rotator slide font-weight-bold text-8 mb-0 appear-animation" data-appear-animation="maskUp">
+                            <span>What does the Personal Learning Coach do for me?</span>
+                        </h1>
+                    </div>
+                    <div class="overflow-hidden mb-3">
+                        <ul>
+                            <li>Gives me a clear picture of myself as a learner</li>
+                            <li>Provides me with a Personal Learning Profile that I can share with teachers, peers, and would-be employers.</li>
+                            <li>Shows me how I can work more effectively with others.</li>
+                            <li>Breaks tasks and assignments down into understandable pieces.</li>
+                            <li>Provides me with personalized strategies that guide me to successfully complete the task!</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 counter divider-left-border">
-                <div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="750" data-appear-animation-duration="750">
-                    <h3 class="font-weight-extra-bold text-14 line-height-1 mb-2" data-to="35" data-append="K+">0</h3>
-                    <label class="font-weight-semibold negative-ls-1 text-color-dark mb-0">Websites Using PLC HTML</label>
-                    <p class="text-color-grey font-weight-semibold pb-1 mb-2">100K+ IN ALL VERSIONS</p>
-                    <p class="mb-0"><a href="https://themeforest.net/item/PLC-responsive-html5-template/4106987" class="text-color-primary d-flex align-items-center justify-content-center text-4 font-weight-semibold text-decoration-none" target="_blank">BUILD WEBSITE <i class="fas fa-long-arrow-alt-right ml-2 text-4 mb-0"></i></a></p>
+            </div> --}}
+
+            <div class="row mt-3 mb-5">
+                <div class="col-md-6 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="800">
+                    <h3 class="font-weight-bold text-4 mb-2">What does the Personal Learning Coach do for me?</h3>
+                    <ul>
+                        <li>Gives me a clear picture of myself as a learner</li>
+                        <li>Provides me with a Personal Learning Profile that I can share with teachers, peers, and would-be employers.</li>
+                        <li>Shows me how I can work more effectively with others.</li>
+                        <li>Breaks tasks and assignments down into understandable pieces.</li>
+                        <li>Provides me with personalized strategies that guide me to successfully complete the task!</li>
+                    </ul>
                 </div>
+                <div class="col-md-6 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="600">
+                    <h3 class="font-weight-bold text-4 mb-2">How does the Personal Learning Coach work?</h3>
+                    <ul>
+                        <li>Establish your account.</li>
+                        <li>Complete the Learning Connections Inventory (LCI) as prompted.</li>
+                        <li>Create a Personal Learning Profile selecting statements that describe you.</li>
+                        <li>Share your Personal Learning Profile with others.</li>
+                        <li>Input a task or assignment you've been asked to complete</li>
+                        <ul>
+                            <li>Name the task.</li>
+                            <li>Select a category (Reading, Writing, Math, Test-taking)</li
+                                ><li>Cut and paste the assignment into the app as directed.</li>
+                                <li>Look at the task details and how it is decoded.</li>
+                                <li>Select suggested task strategies that work for you.</li>
+                                <li>Personalize your strategies and save.</li></ul><li>Get your friends or classmates to establish an account and then build teams by having them share their LCI scores with you!</li>
+                            </ul>
+                </div>
+                
             </div>
+
         </div>
-        <div class="intro row align-items-center justify-content-center justify-content-md-start">
-            <div class="col-3 pr-0 pl-3 z-index-2">
-                <img src="{{ asset('FrontendFiles/img/lazy.png') }}" data-plugin-lazyload data-plugin-options="{'threshold': 500, 'effect':'fadeIn'}" data-original="img/landing/intro2.jpg" class="img-fluid border border-width-10 border-color-light box-shadow-3 rounded d-none d-md-block appear-animation" alt="Screenshot 2" data-appear-animation="fadeInUp" data-appear-animation-delay="600">
-                <div class="position-absolute d-none d-md-flex align-items-end appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="900" style="bottom: -60px; right: -90px;">
-                    <span class="arrow hlt" style="margin-right: -70px;"></span>
-                    <strong class="text-color-dark mb-4 pb-3">modern designs!</strong>
+    </div>
+
+</div>
+
+{{-- Pricing Tablr --}}
+<section id="pricing" class="parallax section section-text-light section-parallax mt-0 mb-0 py-5" data-plugin-parallax data-plugin-options="{'speed': -0.5}" data-image-src="{{asset('FrontendFiles/img/custom/parallax.jpg')}}">
+    <div class="container py-5 my-5">
+        <div class="pricing-table pricing-table-no-gap">
+            <div class="col-md-4">
+                <div class="plan">
+                    <div class="plan-header bg-light py-4">
+                        <h3 class="text-color-dark">Enterprise</h3>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price"><span class="price-unit">$</span>59</span>
+                        <label class="price-label">PER MONTH</label>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li>10GB Disk Space</li>
+                            <li>100GB Monthly Bandwith</li>
+                            <li>20 Email Accounts</li>
+                            <li>Unlimited Subdomains</li>
+                        </ul>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="#" class="btn btn-dark btn-modern btn-outline py-2 px-4">Sign Up</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-11 col-md-9 pl-0 pr-5 pb-5 pb-md-0 mb-5 mb-md-0">
-                <div class="intro2 pt-5 pt-md-0 mt-5 mt-lg-0 appear-animation pr-5" data-appear-animation="fadeInUp" data-appear-animation-delay="400"><img src="{{ asset('FrontendFiles/img/lazy.png') }}" data-plugin-lazyload data-plugin-options="{'threshold': 500, 'effect':'fadeIn'}" data-original="img/landing/intro1.jpg" class="img-fluid box-shadow-3 position-relative z-index-1 rounded" alt="Screenshot 1" style="left: -110px;"></div>
-                <div class="intro3 z-index-3 position-absolute appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="800" style="top: 20%; right: 4%;">
-                    <img src="{{ asset('FrontendFiles/img/lazy.png') }}" data-plugin-lazyload data-plugin-options="{'threshold': 500, 'effect':'fadeIn'}" data-original="img/landing/intro3.jpg" class="img-fluid border border-width-10 border-color-light box-shadow-3 rounded" alt="Screenshot 3">
-                    <div class="position-absolute d-none d-md-flex align-items-end appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1100" style="bottom: -135px; right: -20px;">
-                        <strong class="text-color-dark mb-3">a lot of demos!</strong>
-                        <span class="arrow hru"></span>
+            <div class="col-md-4">
+                <div class="plan plan-featured">
+                    <div class="plan-header bg-primary py-4">
+                        <h3>Standard</h3>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price"><span class="price-unit">$</span>17</span>
+                        <label class="price-label">PER MONTH</label>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li>3GB Disk Space</li>
+                            <li>25GB Monthly Bandwith</li>
+                            <li>5 Email Accounts</li>
+                            <li>Unlimited Subdomains</li>
+                        </ul>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="#" class="btn btn-primary btn-modern py-2 px-4">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="plan">
+                    <div class="plan-header bg-light py-4">
+                        <h3 class="text-color-dark">Basic</h3>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price"><span class="price-unit">$</span>9</span>
+                        <label class="price-label">PER MONTH</label>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li>1GB Disk Space</li>
+                            <li>10GB Monthly Bandwith</li>
+                            <li>2 Email Accounts</li>
+                            <li>Unlimited Subdomains</li>
+                        </ul>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="#" class="btn btn-dark btn-modern btn-outline py-2 px-4">Sign Up</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section> --}}
+</section>
+
+{{-- Contact Us  --}}
+<div class="container py-5" id="contact">
+    <div class="row py-4">
+        <div class="col-lg-6">
+
+            <div class="overflow-hidden mb-1">
+                <h2 class="font-weight-normal text-7 mt-2 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200"><strong class="font-weight-extra-bold">Contact</strong> Us</h2>
+            </div>
+            <div class="overflow-hidden mb-4 pb-3">
+                <p class="mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="400">Feel free to ask for details, don't save any questions!</p>
+            </div>
+
+            <form class="contact-form" action="php/contact-form.php" method="POST">
+                <div class="contact-form-success alert alert-success d-none mt-4">
+                    <strong>Success!</strong> Your message has been sent to us.
+                </div>
+            
+                <div class="contact-form-error alert alert-danger d-none mt-4">
+                    <strong>Error!</strong> There was an error sending your message.
+                    <span class="mail-error-message text-1 d-block"></span>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group col-lg-6">
+                        <label class="required font-weight-bold text-dark text-2">Full Name</label>
+                        <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" required>
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label class="required font-weight-bold text-dark text-2">Email Address</label>
+                        <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label class="font-weight-bold text-dark text-2">Subject</label>
+                        <input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label class="required font-weight-bold text-dark text-2">Message</label>
+                        <textarea maxlength="5000" data-msg-required="Please enter your message." rows="8" class="form-control" name="message" required></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <input type="submit" value="Send Message" class="btn btn-primary btn-modern" data-loading-text="Loading...">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <div class="col-lg-6">
+
+            <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
+                <h4 class="mt-2 mb-1">Our <strong>Office</strong></h4>
+                <ul class="list list-icons list-icons-style-2 mt-2">
+                    <li><i class="fas fa-map-marker-alt top-6"></i> <strong class="text-dark">Address:</strong> 1234 Street Name, City Name, United States</li>
+                    <li><i class="fas fa-phone top-6"></i> <strong class="text-dark">Phone:</strong> (123) 456-789</li>
+                    <li><i class="fas fa-envelope top-6"></i> <strong class="text-dark">Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></li>
+                </ul>
+            </div>
+
+            <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="950">
+                <h4 class="pt-5">Business <strong>Hours</strong></h4>
+                <ul class="list list-icons list-dark mt-2">
+                    <li><i class="far fa-clock top-6"></i> Monday - Friday - 9am to 5pm</li>
+                    <li><i class="far fa-clock top-6"></i> Saturday - 9am to 2pm</li>
+                    <li><i class="far fa-clock top-6"></i> Sunday - Closed</li>
+                </ul>
+            </div>
+
+            <h4 class="pt-5">Get in <strong>Touch</strong></h4>
+            <p class="lead mb-0 text-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        </div>
+
+    </div>
+
+</div>
+@endsection
+
+@section('js')
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>  
 @endsection
