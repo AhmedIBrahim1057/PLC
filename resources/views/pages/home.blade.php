@@ -107,7 +107,7 @@
                         <li>Provides me with personalized strategies that guide me to successfully complete the task!</li>
                     </ul>
                 </div>
-                <div class="col-md-6 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="600">
+                <div class="col-md-6 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="800">
                     <h3 class="font-weight-bold text-4 mb-2">How does the Personal Learning Coach work?</h3>
                     <ul>
                         <li>Establish your account.</li>
@@ -133,24 +133,39 @@
 </div>
 
 {{-- Pricing Tablr --}}
-<section id="pricing" class="parallax section section-text-light section-parallax mt-0 mb-0 py-5" data-plugin-parallax data-plugin-options="{'speed': -0.5}" data-image-src="{{asset('FrontendFiles/img/custom/parallax.jpg')}}">
+<div class="home-intro bg-primary" id="home-intro">
+    <div class="container">
+
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h2 class="font-weight-normal text-6 my-4 text-light"><strong class="font-weight-extra-bold">SELECT &nbsp;YOUR &nbsp;SUBSCRIPTION</strong></h2>
+                <p class="small font-weight-light opacity-8">
+                    To access the Let Me Learn platform you must either belong to an institution and provide your institution's code OR you can purchase your own subscription with a credit card.
+                </p>
+                <p class="font-weight-light text-color-light opacity-8 mt-2 small">Individual subscriptions come with a FREE 14-day trial period! You won't be charged until your trial period has ended.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<section id="pricing" class="parallax section section-text-light section-parallax mt-0 mb-0 pb-5" data-plugin-parallax data-plugin-options="{'speed': -0.5}" data-image-src="{{asset('FrontendFiles/img/custom/parallax.jpg')}}">
     <div class="container py-5 my-5">
         <div class="pricing-table pricing-table-no-gap">
             <div class="col-md-4">
                 <div class="plan">
                     <div class="plan-header bg-light py-4">
-                        <h3 class="text-color-dark">Enterprise</h3>
+                        <h3 class="text-color-dark">Individual</h3>
                     </div>
                     <div class="plan-price">
-                        <span class="price"><span class="price-unit">$</span>59</span>
-                        <label class="price-label">PER MONTH</label>
+                        <span class="price"><span class="price-unit">$</span>39.99</span>
+                        <label class="price-label">PER YEAR</label>
                     </div>
                     <div class="plan-features">
                         <ul>
-                            <li>10GB Disk Space</li>
-                            <li>100GB Monthly Bandwith</li>
-                            <li>20 Email Accounts</li>
-                            <li>Unlimited Subdomains</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>consectetur adipiscing elit</li>
+                            <li>Nullam a maximus mauris</li>
+                            <li>Etiam porta dolor vitae nibh</li>
                         </ul>
                     </div>
                     <div class="plan-footer">
@@ -161,18 +176,20 @@
             <div class="col-md-4">
                 <div class="plan plan-featured">
                     <div class="plan-header bg-primary py-4">
-                        <h3>Standard</h3>
+                        <h3>Student</h3>
                     </div>
                     <div class="plan-price">
-                        <span class="price"><span class="price-unit">$</span>17</span>
-                        <label class="price-label">PER MONTH</label>
+                        <span class="price"><span class="price-unit">$</span>14.99</span>
+                        <label class="price-label">PER YEAR</label>
                     </div>
                     <div class="plan-features">
                         <ul>
-                            <li>3GB Disk Space</li>
-                            <li>25GB Monthly Bandwith</li>
-                            <li>5 Email Accounts</li>
-                            <li>Unlimited Subdomains</li>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>consectetur adipiscing elit</li>
+                                <li>Nullam a maximus mauris</li>
+                                <li>Etiam porta dolor vitae nibh</li>
+                            </ul>
                         </ul>
                     </div>
                     <div class="plan-footer">
@@ -183,18 +200,18 @@
             <div class="col-md-4">
                 <div class="plan">
                     <div class="plan-header bg-light py-4">
-                        <h3 class="text-color-dark">Basic</h3>
+                        <h3 class="text-color-dark">institution</h3>
                     </div>
                     <div class="plan-price">
-                        <span class="price"><span class="price-unit">$</span>9</span>
-                        <label class="price-label">PER MONTH</label>
+                        <span class="price"><span class="price-unit">Verification Code</span>
+                        {{-- <label class="price-label">PER MONTH</label> --}}
                     </div>
                     <div class="plan-features">
                         <ul>
-                            <li>1GB Disk Space</li>
-                            <li>10GB Monthly Bandwith</li>
-                            <li>2 Email Accounts</li>
-                            <li>Unlimited Subdomains</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>consectetur adipiscing elit</li>
+                            <li>Nullam a maximus mauris</li>
+                            <li>Etiam porta dolor vitae nibh</li>
                         </ul>
                     </div>
                     <div class="plan-footer">
@@ -283,8 +300,8 @@
                 </ul>
             </div>
 
-            <h4 class="pt-5">Get in <strong>Touch</strong></h4>
-            <p class="lead mb-0 text-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            {{-- <h4 class="pt-5">Get in <strong>Touch</strong></h4>
+            <p class="lead mb-0 text-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> --}}
 
         </div>
 

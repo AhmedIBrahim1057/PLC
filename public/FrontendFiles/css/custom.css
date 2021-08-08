@@ -34,3 +34,24 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
     margin-left: 3px;
 }
+
+.home-intro {
+    background-color: #212529;
+    margin-bottom: 0px;
+    overflow: hidden;
+    padding: 38.4px 0;
+    padding: 2.4rem 0;
+    position: relative;
+    text-align: left;
+}
+
+.home-intro p {
+    color: #FFF;
+    display: inline-block;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 0;
+    letter-spacing: .05px;
+    font-size: 16px;
+
+}
