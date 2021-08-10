@@ -52,7 +52,7 @@
         <!-- Head Libs -->
         <script src="{{ asset('FrontendFiles/vendor/modernizr/modernizr.min.js') }}"></script>
 
-		
+		<link rel="stylesheet" href="{{ secure_asset('css/AdminLTE.min.css') }}">
 
     </head>
     <body class="alternative-font-4 loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 100}">
