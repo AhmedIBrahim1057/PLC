@@ -74,7 +74,7 @@
 								<div class="header-row">
 									<div class="header-logo">
 										<a href="/" class="d-flex align-items-center h6" style="text-decoration: none">
-											<img alt="PLC" width="48" height="48" data-sticky-width="40" data-sticky-height="40"  src="{{ asset('FrontendFiles/img/custom/LOGO-TINY-headonly.png') }}">
+											<img alt="PLC" width="50" height="auto" data-sticky-width="40" data-sticky-height="auto"  src="{{ asset('FrontendFiles/img/custom/logo.png') }}">
 											<div style="width: 230px;" class="ml-2 mt-4 text-center">
 												<span>Personal Learning Coach</span>
                                                 <p class="small">Powered by The Let Me Learn Process®</p>
@@ -110,13 +110,13 @@
                                                         </a>
                                                     </li>
 
-													<li class="dropdown">
-														<a class="dropdown-item " href="/">
-																sign in
+													<li class="dropdown header-nav-features header-nav-features-no-border header-nav-features-lg-show-border ">
+														<a class="dropdown-item active" href="/" style="color: #0B71E1 !important">
+																Login
 														</a>
 													</li>
                                                     
-                                                    <li class="nav-item dropdown nav-item-left-border d-sm-block  ">
+                                                    <li class="nav-item dropdown nav-item-left-border d-sm-block ">
                                                         <a class="nav-link" href="#" role="button" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                             <img src="{{asset('FrontendFiles/img/blank.gif')}}" class="flag flag-us mr-1" alt="English"> English
                                                             <i class="fas fa-angle-down"></i>
