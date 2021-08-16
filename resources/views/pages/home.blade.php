@@ -300,9 +300,10 @@
                 <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
                     <h4 class="mt-2 mb-1">Our <strong>Office</strong></h4>
                     <ul class="list list-icons list-icons-style-2 mt-2">
-                        <li><i class="fas fa-map-marker-alt top-6"></i> <strong class="text-dark">Address:</strong> 1234 Street Name, City Name, United States</li>
-                        <li><i class="fas fa-phone top-6"></i> <strong class="text-dark">Phone:</strong> (123) 456-789</li>
-                        <li><i class="fas fa-envelope top-6"></i> <strong class="text-dark">Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></li>
+                        <li><i class="fas fa-map-marker-alt top-6"></i> <strong class="text-dark">Address:</strong> 31 Driftwood Court Glassboro, NJ 08028</li>
+                        <li><i class="fas fa-phone top-6"></i> <strong class="text-dark">Phone:</strong> 856-553-6281</li>
+                        <li><i class="fas fa-fax top-6"></i> <strong class="text-dark">Fax:</strong> 856-431-7941</li>
+                        <li><i class="fas fa-envelope top-6"></i> <strong class="text-dark">Email:</strong> <a href="plc@letmelearn.org">plc@letmelearn.org</a></li>
                     </ul>
                 </div>
     
